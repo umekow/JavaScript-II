@@ -104,8 +104,8 @@ let person= function (first, last) {
 };
 
 console.log(person("Christan", "Kendall"));
-// Problem 3
 
+// Problem 3
 //The company Skinix sent an email to the event organizer stating that it wants to give each employee who participated in the 5k a 3% raise. The organizer is demanding a list of all of their employees.
 
 let skinixEmployees = []; 
