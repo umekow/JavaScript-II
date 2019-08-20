@@ -11,30 +11,30 @@ With some basic JavaScript principles in hand, we can now expand our skills out 
 * [x] Add your team lead as collaborator on Github.
 * [x] Clone your OWN version of the repository (Not Lambda's by mistake!).
 * [x] Create a new branch: git checkout -b `<firstName-lastName>`.
-* [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-* [ ] Push commits: git push origin `<firstName-lastName>`.
+* [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+* [x] Push commits: git push origin `<firstName-lastName>`.
 
 **Follow these steps for completing your project.**
 
-* [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
-* [ ] Add your team lead as a reviewer on the pull-request
+* [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+* [x] Add your team lead as a reviewer on the pull-request
 * [ ] Your team lead will count the project as complete by merging the branch back into master.
 
 ## Task 1: Higher Order Functions and Callbacks
 
 This task focuses on getting practice with higher order functions and callback functions by giving you an array of values and instructions on what to do with that array.
 
-* [ ] Review the contents of the [callbacks.js](assignments/callbacks.js) file.  Notice you are given an array at the top of the page.  Use that array to aid you with your functions.
+* [x] Review the contents of the [callbacks.js](assignments/callbacks.js) file.  Notice you are given an array at the top of the page.  Use that array to aid you with your functions.
 
-* [ ] Complete the problems provided to you but skip over stretch problems until you are complete with every other JS file first.
+* [x] Complete the problems provided to you but skip over stretch problems until you are complete with every other JS file first.
 
 ## Task 2: Array Methods
 
 Use `.forEach()`, `.map()`, `.filter()`, and `.reduce()` to loop over an array with 50 objects in it. The [array-methods.js](assignments/array-methods.js) file contains several challenges built around a fundraising 5K fun run event.
 
-* [ ] Review the contents of the [array-methods.js](assignments/array-methods.js) file.  
+* [x] Review the contents of the [array-methods.js](assignments/array-methods.js) file.  
 
-* [ ] Complete the problems provided to you but skip over stretch problems until you are complete with every other JS file first.
+* [x] Complete the problems provided to you but skip over stretch problems until you are complete with every other JS file first.
 
 * [ ] Notice the last three problems are up to you to create and solve.  This is an awesome opportunity for you to push your critical thinking about array methods, have fun with it.
 

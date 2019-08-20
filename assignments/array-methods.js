@@ -57,29 +57,59 @@ const runners = [
 
 // ==== Challenge 1: Use .forEach() ====
 // The event director needs both the first and last names of each runner for their running bibs. Combine both the first and last names and populate a new array called `fullNames`. This array will contain just strings.
-let fullNames = [];
+
+let fullNames = []
+
+fullNames = runners.map(person => `${person.first_name} ${person.last_name}`);
 console.log(fullNames);
+
+
 
 // ==== Challenge 2: Use .map() ====
 // The event director needs to have all the runners' first names in uppercase because the director BECAME DRUNK WITH POWER. Populate an array called `firstNamesAllCaps`. This array will contain just strings.
 let firstNamesAllCaps = [];
+firstNamesAllCaps = runners.map(person => `${person.first_name.toUpperCase()}`);
 console.log(firstNamesAllCaps);
 
 // ==== Challenge 3: Use .filter() ====
 // The large shirts won't be available for the event due to an ordering issue. We need a filtered version of the runners array, containing only those runners with large sized shirts so they can choose a different size. This will be an array of objects.
 let runnersLargeSizeShirt = [];
+
+runnersLargeSizeShirt = runners.filter(person => person.shirt_size === 'L');
 console.log(runnersLargeSizeShirt);
 
 // ==== Challenge 4: Use .reduce() ====
 // The donations need to be tallied up and reported for tax purposes. Add up all the donations and save the total into a ticketPriceTotal variable.
 let ticketPriceTotal = 0;
+
+ticketPriceTotal = runners.reduce((acc, person) => acc + person.donation, 0); 
 console.log(ticketPriceTotal);
 
 // ==== Challenge 5: Be Creative ====
 // Now that you have used .forEach(), .map(), .filter(), and .reduce().  I want you to think of potential problems you could solve given the data set and the 5k fun run theme.  Try to create and then solve 3 unique problems using one or many of the array methods listed above.
 
 // Problem 1
+//The event planner wants to send a thank you note to each runner who donated at least $150
+
+let generousRunners = runners.filter(person => person.donation > 150);
+console.log(generousRunners);
 
 // Problem 2
+//Christan Kendall skipped work to run in the 5k. His employer is demanding proof that he participated or he will be fired. The director needs to get Christian's email from the list so she can send him a certificate of participation.
 
+
+let person= function (first, last) {
+   let email = runners.filter(person => person.first_name === first || person.last_name === last);
+   return `${email[0].email}`; 
+};
+
+console.log(person("Christan", "Kendall"));
 // Problem 3
+
+//The company Skinix sent an email to the event organizer stating that it wants to give each employee who participated in the 5k a 3% raise. The organizer is demanding a list of all of their employees.
+
+let skinixEmployees = []; 
+
+skinixEmployees = runners.filter(person => person.company_name === 'Skinix'); 
+
+console.log(skinixEmployees);
