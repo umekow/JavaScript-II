@@ -4,13 +4,14 @@
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
 
+let cat = "meowing at birds";
 
 let dog = function(b){
-  let cat = "meowing at birds"; 
+ 
   if (b === 'bored'){
-   cat = "running away from dog"
+   return cat = "running away from dog"
   } 
-  return cat; 
+ 
 }
 
 let chaseCat= function (status) {
@@ -18,7 +19,7 @@ let chaseCat= function (status) {
 }
 
 console.log(chaseCat('bored'));
-console.log(chaseCat('eating scraps'));
+
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
