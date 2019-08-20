@@ -3,18 +3,22 @@
 // Keep it simple! Remember a closure is just a function
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
-let cat = "meow at birds"; 
+
 
 let dog = function(b){
+  let cat = "meowing at birds"; 
   if (b === 'bored'){
-  return cat = "run away from dog"
+   cat = "running away from dog"
   } 
+  return cat; 
 }
+
 let chaseCat= function (status) {
   return dog(status); 
 }
 
 console.log(chaseCat('bored'));
+console.log(chaseCat('eating scraps'));
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
